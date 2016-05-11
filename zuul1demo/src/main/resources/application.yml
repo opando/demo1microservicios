@@ -1,0 +1,22 @@
+info:
+  component: zuul server app proxy
+  
+server:
+  port: 8903
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  config:
+    name: zuulserver
+  application:
+    name: zuulserver
+zuul:
+  routes:
+    ms1demo:
+      path: /api/fiscalizacion/**
+      service-id: ms1demo
+    ms11demo:
+      path: /api/fiscalizacion11/**
+      service-id: ms11demo
