@@ -112,7 +112,7 @@ public class FiscalizableServiceImpl implements FiscalizableService {
 			String nr = (int) (Math.random() * 100) +"";
 			String nroRegistro = "QW" + nr;
 			if(!auditores.containsKey(nroRegistro))
-			map.put("QW", new Auditor(nroRegistro, nom[((int) (Math.random() * 100))%5], 
+			map.put(nroRegistro, new Auditor(nroRegistro, nom[((int) (Math.random() * 100))%5], 
 					ape[((int) (Math.random() * 100))%10], ape[((int) (Math.random() * 100))%10], 
 					supervision, (int) (Math.random() * 10) ));
 		}

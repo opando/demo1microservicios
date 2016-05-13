@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.002s</div>
+<div class="counter">0.001s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads</td>
-<td>0.002s</td>
+<td>0.001s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,32 +87,34 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>03:44:43.633 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.opm.archaius1demo.Archaius1demoApplicationTests]
-03:44:43.644 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
-03:44:43.658 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@21b5457 declaringClass = 'com.opm.archaius1demo.Archaius1demoApplicationTests', classes = '{class com.opm.archaius1demo.Archaius1demoApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
-03:44:43.663 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.opm.archaius1demo.Archaius1demoApplicationTests]
-03:44:43.671 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.opm.archaius1demo.Archaius1demoApplicationTests]: using defaults.
-03:44:43.679 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-03:44:43.684 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
-03:44:43.685 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-03:44:43.685 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-03:44:43.687 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@14624faf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@38a8403a]
-03:44:43.689 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.opm.archaius1demo.Archaius1demoApplicationTests]
-03:44:43.690 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.opm.archaius1demo.Archaius1demoApplicationTests]
-03:44:43.691 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.opm.archaius1demo.Archaius1demoApplicationTests]
-03:44:43.691 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.opm.archaius1demo.Archaius1demoApplicationTests]
-03:44:43.693 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.opm.archaius1demo.Archaius1demoApplicationTests]
-03:44:43.693 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.opm.archaius1demo.Archaius1demoApplicationTests]
-03:44:43.695 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@16ac796e testClass = Archaius1demoApplicationTests, testInstance = com.opm.archaius1demo.Archaius1demoApplicationTests@3f2ef3eb, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@13a4ec67 testClass = Archaius1demoApplicationTests, locations = '{}', classes = '{class com.opm.archaius1demo.Archaius1demoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
-03:44:43.755 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
-03:44:43.757 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
-03:44:43.757 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-03:44:43.759 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
-2016-05-06 03:44:44.326  INFO 1018 --- [    Test worker] o.s.boot.SpringApplication               : Starting application on MacBook-Pro-de-Oscar.local with PID 1018 (/Users/opando/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.2.8.RELEASE/830424026af69ad8161db2ee95dc61beaf0ce189/spring-boot-1.2.8.RELEASE.jar started by opando in /Users/opando/sourcegit/java/demo1microservicios/archaius1demo)
-2016-05-06 03:44:44.353  INFO 1018 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1222126b: startup date [Fri May 06 03:44:44 PET 2016]; root of context hierarchy
-2016-05-06 03:44:44.587  INFO 1018 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'encrypt.CONFIGURATION_PROPERTIES' of type [class org.springframework.cloud.bootstrap.encrypt.KeyProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-05-06 03:44:44.587  INFO 1018 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'encryptionBootstrapConfiguration' of type [class org.springframework.cloud.bootstrap.encrypt.EncryptionBootstrapConfiguration$$EnhancerBySpringCGLIB$$985c25d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-05-06 03:44:44.672  INFO 1018 --- [    Test worker] o.s.boot.SpringApplication               : Started application in 0.841 seconds (JVM running for 1.939)
+<pre>20:17:52.166 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.opm.archaius1demo.Archaius1demoApplicationTests]
+20:17:52.172 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:17:52.177 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:17:52.185 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.opm.archaius1demo.Archaius1demoApplicationTests] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+20:17:52.206 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@18975445 declaringClass = 'com.opm.archaius1demo.Archaius1demoApplicationTests', classes = '{class com.opm.archaius1demo.Archaius1demoApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+20:17:52.213 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.opm.archaius1demo.Archaius1demoApplicationTests]: class path resource [com/opm/archaius1demo/Archaius1demoApplicationTests-context.xml] does not exist
+20:17:52.214 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.opm.archaius1demo.Archaius1demoApplicationTests]: class path resource [com/opm/archaius1demo/Archaius1demoApplicationTestsContext.groovy] does not exist
+20:17:52.214 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.opm.archaius1demo.Archaius1demoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:17:52.216 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.opm.archaius1demo.Archaius1demoApplicationTests]
+20:17:52.219 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.opm.archaius1demo.Archaius1demoApplicationTests]: using defaults.
+20:17:52.227 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:17:52.232 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+20:17:52.233 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+20:17:52.238 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7179d31b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2d052b55, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6df4870b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d5c35fa]
+20:17:52.241 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.opm.archaius1demo.Archaius1demoApplicationTests]
+20:17:52.241 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.opm.archaius1demo.Archaius1demoApplicationTests]
+20:17:52.242 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.opm.archaius1demo.Archaius1demoApplicationTests]
+20:17:52.242 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.opm.archaius1demo.Archaius1demoApplicationTests]
+20:17:52.245 [Test worker] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@70fc026b testClass = Archaius1demoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@382fcd9c testClass = Archaius1demoApplicationTests, locations = '{}', classes = '{class com.opm.archaius1demo.Archaius1demoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+20:17:52.246 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.opm.archaius1demo.Archaius1demoApplicationTests]
+20:17:52.246 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.opm.archaius1demo.Archaius1demoApplicationTests]
+20:17:52.248 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@70fc026b testClass = Archaius1demoApplicationTests, testInstance = com.opm.archaius1demo.Archaius1demoApplicationTests@6862e5c8, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@382fcd9c testClass = Archaius1demoApplicationTests, locations = '{}', classes = '{class com.opm.archaius1demo.Archaius1demoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+20:17:52.322 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+20:17:52.324 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+20:17:52.324 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+20:17:52.325 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+2016-05-11 20:17:52.930  INFO 622 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3edf2900: startup date [Wed May 11 20:17:52 PET 2016]; root of context hierarchy
+2016-05-11 20:17:53.162  INFO 622 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5ea2a60c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -120,13 +122,14 @@
  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::        (v1.2.8.RELEASE)
+ :: Spring Boot ::        (v1.3.3.RELEASE)
 
-2016-05-06 03:44:45.087  WARN 1018 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for &quot;http://localhost:8888/bootstrap/default&quot;: Connection refused; nested exception is java.net.ConnectException: Connection refused
-2016-05-06 03:44:45.096  INFO 1018 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@671aad1a: startup date [Fri May 06 03:44:45 PET 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1222126b
-2016-05-06 03:44:45.492  INFO 1018 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4ad97902-4b03-38ac-9f9d-0556c3e27e87
-2016-05-06 03:44:45.505  INFO 1018 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$ConfigurationPropertiesRebinderConfiguration' of type [class org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$ConfigurationPropertiesRebinderConfiguration$$EnhancerBySpringCGLIB$$39bc853a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-05-06 03:44:45.665  INFO 1018 --- [    Test worker] c.o.a.Archaius1demoApplicationTests      : Started Archaius1demoApplicationTests in 1.904 seconds (JVM running for 2.933)
+2016-05-11 20:17:53.488  INFO 622 --- [    Test worker] c.o.a.Archaius1demoApplicationTests      : No active profile set, falling back to default profiles: default
+2016-05-11 20:17:53.500  INFO 622 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b703a80: startup date [Wed May 11 20:17:53 PET 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3edf2900
+2016-05-11 20:17:54.070  INFO 622 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4509dc43-8143-3c2e-8992-78d2c3ffc786
+2016-05-11 20:17:54.097  INFO 622 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5ea2a60c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-05-11 20:17:54.105  INFO 622 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$9180a142] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-05-11 20:17:54.896  INFO 622 --- [    Test worker] c.o.a.Archaius1demoApplicationTests      : Started Archaius1demoApplicationTests in 2.568 seconds (JVM running for 3.464)
 </pre>
 </span>
 </div>
@@ -138,7 +141,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.12</a> at 06-may-2016 3:44:45</p>
+<a href="http://www.gradle.org">Gradle 2.12</a> at 11-may-2016 20:17:55</p>
 </div>
 </div>
 </body>
